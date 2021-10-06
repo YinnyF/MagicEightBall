@@ -7,6 +7,7 @@ public class GUI {
         // the window
         JFrame frame = new JFrame();
 
+        JButton button = new JButton("Click me");
         // makes the panel
         JPanel panel = new JPanel();
 
@@ -14,6 +15,7 @@ public class GUI {
         panel.setBorder(BorderFactory.createEmptyBorder(30, 30, 10, 30));
         // a layout manager object
         panel.setLayout(new GridLayout(0, 1));
+        panel.add(button);
 
         frame.add(panel, BorderLayout.CENTER);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
