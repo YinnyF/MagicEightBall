@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class MagicEightBall {
@@ -9,7 +10,8 @@ public class MagicEightBall {
         String userInput = scanner.next();
         scanner.close();
 
-        int randomNumber = 1;
+        Random rand = new Random();
+        int randomNumber = rand.nextInt(7);
 
         if (randomNumber == 0) {
             System.out.println("Cool Story, Bro.");
